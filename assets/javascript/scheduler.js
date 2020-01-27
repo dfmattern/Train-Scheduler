@@ -31,6 +31,7 @@ $(document).ready(function(){
     let firstTrain = $("#first-train-time").val();
     let frequency = $("#train-frequency").val();
 
+    //push to database
     database.ref().push({
         trainName: trainName,
         destination : destination,
