@@ -22,7 +22,7 @@
     <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
     <!--link to JQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--link to momenet js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/af.js"></script>
     <!--link to local JS-->
@@ -43,22 +43,26 @@
                   <div><h3>Add Train to Schedule</h3></div>
                   <div class="form-group">
                     <label for="train-name">Train Name</label>
-                    <input class="form-control" id="trainName" type="text">
+                    <input class="form-control" id="trainName" type="text" />
                   </div>
                   <div class="form-group">
                     <label for="destination">Destination</label>
-                    <input class="form-control" id="destination" type="text">
+                    <input class="form-control" id="destination" type="text" />
                   </div>
                   <div class="form-group">
-                    <label for="first-train-time">First Train Time (hh:mm 24-Hour Format)</label>
-                    <input class="form-control" id="trainName" type="text">
+                    <label for="first-train-time"
+                      >First Train Time (hh:mm 24-Hour Format)</label
+                    >
+                    <input class="form-control" id="first-train-time" type="text" />
                   </div>
                   <div class="form-group">
                     <label for="train-frequency">Frequency (min)</label>
-                    <input class="form-control" id="trainName" type="text">
+                    <input class="form-control" id="train-frequency" type="number" />
                   </div>
-                  
-                  <button type="submit" class="btn btn-primary" id= "add-train">Add Train</button>
+
+                  <button type="submit" class="btn btn-primary" id="add-train">
+                    Add Train
+                  </button>
                 </form>
               </div>
             </div>
@@ -68,38 +72,21 @@
 
       <!-- Second Half -->
 
-      <div class="col-md-6 p-0 bg-white h-md-100 loginarea">
+      <div class="col-md-6 p-0 bg-white h-md-100">
         <div
           class="d-md-flex align-items-center h-md-100 p-5 justify-content-center"
         >
           <table class="table table-bordered">
             <thead>
               <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
+                <th scope="col">Train Name</th>
+                <th scope="col">Destination</th>
+                <th scope="col">Frequency (min)</th>
+                <th scope="col">Next Arrival</th>
+                <th scope="col">Minutes Away</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-              </tr>
-            </tbody>
+            <tbody id="table-body"></tbody>
           </table>
         </div>
       </div>
