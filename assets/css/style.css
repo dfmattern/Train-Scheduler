@@ -1,27 +1,40 @@
-html{
-    font-family: 'Open Sans', sans-serif;
+html {
+  font-family: "Open Sans", sans-serif;
 }
-body{
-    background: #CEE4F2;
+body {
+  background: #cee4f2;
 }
 .btn-custom {
-    background-color:#BF964B;
+  background-color: #bf964b;
 }
 .card-title {
-    background-color: #BF964B;
+  background-color: #bf964b;
 }
 
 @media (min-width: 768px) {
-    .h-md-100 { height: 100vh; }
+  .h-md-100 {
+    height: 100vh;
+  }
 }
-.btn-round { border-radius: 30px; }
-.bg-left { background:#405B73; }
-.text-cyan { color: #35bdff; }
-.bg-right{background:#CEE4F2 ;}
-form{
-    color: black;
+.btn-round {
+  border-radius: 30px;
 }
-thead{
-    background-color: #BF964B;
-    font-size: 24px;
+.bg-left {
+  background: #405b73;
+}
+.text-cyan {
+  color: #35bdff;
+}
+.bg-right {
+  background: #cee4f2;
+}
+form {
+  color: black;
+}
+thead {
+  background-color: #bf964b;
+  font-size: 24px;
+}
+.table {
+text-align: center;
 }
